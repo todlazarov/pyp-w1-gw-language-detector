@@ -26,10 +26,3 @@ def detect_language(text, languages=LANGUAGES):
     total_counts = {'spanish': spanish_counter, 'german': german_counter, 'english': english_counter }
     
     return max(total_counts, key = total_counts.get)
-    
-    #if spanish_counter > german_counter:
-    #    return 'spanish'
-    #elif german_counter > spanish_counter:
-    #    return 'german'
-    #else:
-    #    return 'equal'
