@@ -11,6 +11,7 @@ def detect_language(text, languages=LANGUAGES):
 
     spanish_counter = 0 
     german_counter = 0
+    english_counter = 0
     
     for word in languages[0]['common_words']:
         if word in input_text:
@@ -18,14 +19,17 @@ def detect_language(text, languages=LANGUAGES):
     for word in languages[1]['common_words']:
         if word in input_text:
             german_counter += 1
+    for word in languages[2]['common_words']:
+        if word in input_text:
+            english_counter += 1
+            
+    total_counts = {'spanish': spanish_counter, 'german': german_counter, 'english': english_counter }
     
-    if spanish_counter > german_counter:
-        return 'spanish'
-    elif german_counter > spanish_counter:
-        return 'german'
-    else:
-        return 'equal'
-        
-        
-        
-        
+    return max(total_counts, key = total_counts.get)
+    
+    #if spanish_counter > german_counter:
+    #    return 'spanish'
+    #elif german_counter > spanish_counter:
+    #    return 'german'
+    #else:
+    #    return 'equal'
