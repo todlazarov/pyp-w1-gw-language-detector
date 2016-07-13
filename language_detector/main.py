@@ -19,12 +19,10 @@ def detect_language(text, languages=LANGUAGES):
     for word in languages[1]['common_words']:
         if word in input_text:
             german_counter += 1
-    for word in languages[2]['common_words']:
+    for word in languages[-1]['common_words']:
         if word in input_text:
             english_counter += 1
             
     total_counts = {'spanish': spanish_counter, 'german': german_counter, 'english': english_counter }
     
     return max(total_counts, key = total_counts.get)
-    
-    
