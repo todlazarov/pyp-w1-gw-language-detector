@@ -13,9 +13,8 @@ LANGUAGES = [
                     'si', 'me', 'ya', 'ver', 'porque', 'dar', 'cuando', 'él',
                     'muy', 'sin', 'vez', 'mucho', 'saber', 'qué', 'sobre',
                     'mi', 'alguno', 'mismo', 'yo', 'también', 'hasta'
-                   ]  # add your words here
+                   ]
     },
-    #  include your extra languages here
     {
         'name': 'German',
         'common_words': ['das', 'ist', 'du', 'ich', 'nicht', 'die', 'es', 'und',
@@ -24,7 +23,7 @@ LANGUAGES = [
                     'hier', 'eine', 'wenn', 'hat', 'all', 'sind', 'von',
                     'dich', 'war', 'haben', 'für', 'an', 'habe', 'da', 'nein',
                     'bin', 'noch', 'dir', 'uns', 'sich', 'nur',
-                    'einen', 'kann', 'dem']  # add your words here
+                    'einen', 'kann', 'dem']
     },
     {
         'name': 'English',
