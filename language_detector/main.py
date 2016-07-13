@@ -16,6 +16,6 @@ def detect_language(text, languages=LANGUAGES):
         for word in language['common_words']:
             if word in input_text:
                 counter += 1
-            counter_dict[language['name']]= counter
+        counter_dict[language['name']] = counter
     
     return max(counter_dict, key = counter_dict.get)
